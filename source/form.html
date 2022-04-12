@@ -30,19 +30,19 @@
         </nav>
       </header>
       <main class="main-review">
-        <div class="main-welcome">
+        <section class="welcome">
           <h1 class="visually-hidden">Приветствие на сайте Седоны</h1>
-          <img class="main-welcome__banner-catalog" src="#" alt="Седона.">
-        </div>
-        <div class="intro">
+          <img class="welcome__banner" src="#" alt="Добро пожаловать в Седону.">
+        </section>
+        <section class="form-container">
+          <div class="intro">
             <h2 class="intro__title">Оставьте свой отзыв</h2>
             <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,
                 а также о посещенных вами достопримечательностях</p>
         </div>
-        <section class="form-container">
             <form action="https://echo.htmlacademy.ru/" method="get">
-            <div class="user">
-                <h2 class="user__title">Представьтесь:</h2>
+            <fieldset class="user">
+                <legend class="user__title">Представьтесь:</legend>
                     <ul class="user__list">
                       <li>
                         <label for="name">Имя*:</label>
@@ -57,9 +57,9 @@
                         <input type="text" id="patronymic" name="user_patronymic">
                       </li>
                     </ul>
-            </div>
-            <div class="contact-user">
-                <h2 class="contact-user__title">Контактная информация:</h2>
+            </fieldset>
+            <fieldset class="contact-user">
+                <legend class="contact-user__title">Контактная информация:</legend>
                 <ul class="contact-user__list">
                     <li class="contact-user-phone">
                         <label for="phone">Контактный телефон*:</label>
@@ -70,9 +70,9 @@
                         <input type="text" id="email" name="phone-number">
                     </li>
                 </ul>
-            </div>
-            <div class="impression">
-                <h2 class="impression-title">Ваше общее впечатление:</h2>
+            </fieldset>
+            <fieldset class="impression">
+                <legend class="impression-title">Ваше общее впечатление:</legend>
                 <ul class="impression-list">
                     <li class="impression-list__item">
                         <label for="good">Скорее положительное</label>
@@ -87,9 +87,9 @@
                         <input class="impression-list__input" id="between" type="radio" name="between">
                     </li>
                 </ul>
-            </div>
-            <div class="visit">
-                <h2 class="visit-title">Посещенные достопримечательности:</h2>
+            </fieldset>
+            <fieldset class="visit">
+                <legend class="visit-title">Посещенные достопримечательности:</legend>
                 <ul class="visit-list">
                     <li class="visit-list__item">
                         <label for="evil">Мост дьявола</label>
@@ -108,13 +108,15 @@
                         <input class="visit-list__input" id="rock"  type="checkbox" name="rock">
                     </li>
                 </ul>
-            </div>
+            </fieldset>
 
             <div class="message-form">
                 <label for="msg">Опишите свои эмоции:</label>
                 <textarea id="msg" name="user_message"></textarea>
-                <button class="message-form__button" type="submit">Отправить отзыв</button>
-                <small class="message-form__footnote">*-Обязательные поля</small>
+                  <div class="message-button">
+                    <button class="message-form__button" type="submit">Отправить отзыв</button>
+                    <small class="message-form__footnote">*-Обязательные поля</small>
+                  </div>
             </div>
         </form>
         </section>
