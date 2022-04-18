@@ -1,0 +1,63 @@
+.foto__description {
+  text-align: center;
+  padding: 100px 320px 60px 320px;
+}
+
+.foto__description-title {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+  
+.foto__description-text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.foto__images .foto__item-title {
+  position: relative;
+  bottom: 70px;
+  left: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.foto__item-text {
+  position: relative;
+  bottom: 85px;
+  left: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.foto__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foto__list .foto__list-title {
+  position: relative;
+  bottom: 70px;
+  left: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.foto__list-text {
+  position: relative;
+  bottom: 85px;
+  left: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}

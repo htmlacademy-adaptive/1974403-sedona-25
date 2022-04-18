@@ -1,0 +1,34 @@
+.presentation {
+  margin: 0;
+  padding: 66px 200px 100px 200px;
+}
+
+.presentation__description {
+  margin-bottom: 63px;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
+.presentation__title {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.presentation__text {
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.presentation__video-block .presentation__video-button {
+  position: relative;
+  top: 200px;
+  left: 50%;
+}
