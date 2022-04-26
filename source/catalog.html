@@ -2,69 +2,81 @@
 <html class="catalog" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Городок Седона.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="catalog__body">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-navigation__logo">
           <img
-            src="./images/logo.svg"
-            width="185"
+            src="./img/logo.svg"
             height="96"
             alt="Логотип Седоны."
           />
         </a>
-        <!-- <button
+        <button
           class="main-navigation__toggle"
           type="button"
           aria-label="Открыть/закрыть меню"
-        ></button> -->
-          <ul class="main-navigation__list main-navigation__list-mobile">
-            <li
-              class="main-navigation__list-item"
+        ></button>
+        <ul class="main-navigation__list main-navigation__list-mobile">
+          <li class="main-navigation__list-item">
+            <a
+              class="main-navigation__link"
+              href="index.html"
+              aria-label="Главная страница"
+              >Главная</a
             >
-              <a class="navigation-link" href="#" aria-label="Главная страница"
-                >Главная</a
-              >
-            </li>
-            <li class="main-navigation__list-item main-navigation__list-item--active">
-              <a class="navigation-link" href="#" aria-label="Фото и видео"
-                >Фото и Видео</a
-              >
-            </li>
-            <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Форма отзыва"
-                >Форма отзыва</a
-              >
-            </li>
-            <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Сайт Html Academy"
-                >Html Academy</a
-              >
-            </li>
-          </ul>
-       
+          </li>
+          <li
+            class="main-navigation__list-item main-navigation__list-item--active"
+          >
+            <a
+              class="main-navigation__link"
+              href="catalog.html"
+              aria-label="Фото и видео"
+              >Фото и Видео</a
+            >
+          </li>
+          <li class="main-navigation__list-item">
+            <a
+              class="main-navigation__link"
+              href="form.html"
+              aria-label="Форма отзыва"
+              >Форма отзыва</a
+            >
+          </li>
+          <li class="main-navigation__list-item">
+            <a class="main-navigation__link" href="#" aria-label="Сайт Html Academy"
+              >Html Academy</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-catalog">
-      <section class="welcome">
+      <section class="welcome-catalog">
         <h1 class="visually-hidden">Приветствие на сайте Седоны</h1>
-        <img class="welcome__banner" src="./images/catalog/SEDONA.svg" alt="Добро пожаловать в Седону." />
+        <img
+          class="welcome__banner"
+          src="./img/catalog/sedona-welcome.svg"
+          alt="Добро пожаловать в Седону."
+        />
       </section>
       <section class="foto">
-        <div class="foto__description">
-          <h2 class="foto__description-title">Фото и Видео</h2>
-          <p class="foto__description-text">
+        <div class="foto-description">
+          <h2 class="foto-description__title">Фото и Видео</h2>
+          <p class="foto-description__text">
             Не можете решиться на путешествие из-за курса? Фотографии помогут
             вам забыть о политике и экономике.
           </p>
         </div>
         <div class="foto__images">
           <img
-            src="./images/catalog/photo-1-desktop.jpg.jpg"
-            width="1200"
+            src="./img/catalog/photo-1-desktop.jpg.jpg"
             height="400"
             alt="Неродные просторы"
           />
@@ -78,8 +90,7 @@
         <ul class="foto__list">
           <li class="foto__list-item">
             <img
-              src="./images/catalog/photo-2-desktop.jpg.jpg"
-              width="400"
+              src="./img/catalog/photo-2-desktop.jpg.jpg"
               height="267"
               alt="Местная растительность"
             />
@@ -96,8 +107,7 @@
           </li>
           <li class="foto__list-item">
             <img
-              src="./images/catalog/photo-3-desktop.jpg.jpg"
-              width="400"
+              src="./img/catalog/photo-3-desktop.jpg.jpg"
               height="267"
               alt="Дорога на север"
             />
@@ -114,8 +124,7 @@
           </li>
           <li class="foto__list-item">
             <img
-              src="./images/catalog/photo-4-desktop.jpg.jpg"
-              width="400"
+              src="./img/catalog/photo-4-desktop.jpg.jpg"
               height="267"
               alt="Мост дьявола"
             />
@@ -134,32 +143,30 @@
       </section>
       <section class="presentation">
         <div class="presentation__description">
-        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__text">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
-          в очередной раз!
-        </p>
+          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+          <p class="presentation__text">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
         </div>
         <div class="presentation__video-block">
           <button class="presentation__video-button">play</button>
           <img
-            src="./images/catalog/video-desktop.jpg.jpg"
-            width="800"
+            src="./img/catalog/video-desktop.jpg.jpg"
             height="500"
             alt="Видео презентация."
           />
         </div>
       </section>
-     </main>
       <footer class="footer">
-        <a class="hashtag" href="#">#visitsedona</a>
+        <a class="footer__hashtag" href="#">#visitsedona</a>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a
               class="footer__social-link footer__social-link--vk"
               href="https://vkontakte.com/htmlacademy_ru"
               aria-label="vkontakte"
-            >vk
+              >vk
             </a>
           </li>
           <li class="footer__social-item">
@@ -168,7 +175,8 @@
               href="https://telegram.com/htmlacademy_ru"
               aria-label="telegram"
             >
-            </a>tel
+            </a
+            >tel
           </li>
           <li class="footer__social-item">
             <a
@@ -176,14 +184,12 @@
               href="https://youtube.com/htmlacademy_ru"
               aria-label="youtube"
             >
-            </a>you
-
+            </a
+            >you
           </li>
         </ul>
         <a class="footer__developed-link" href="#">Разработано</a>
       </footer>
-
-
+    </main>
   </body>
 </html>
-

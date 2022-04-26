@@ -1,0 +1,33 @@
+.message-form {
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.message__description {
+  font-weight: 700;
+  text-align: center;
+}
+
+.message__textarea {
+  background-color: $color-white-smoke;
+  border: none;
+  padding: 16px;
+  height: 118px;
+}
+
+.message-form__footnote {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.message-form__button {
+  color: $color-default-white;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}

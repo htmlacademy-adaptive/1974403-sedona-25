@@ -1,23 +1,19 @@
-.user__list {
-  list-style-type: none;
-}
-
-.user__title {
+.foto-description__title {
   font-size: 18px;
-  font-weight: 700;
   line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 23px;
+  margin-top: 0;
   text-align: center;
 }
 
-.user__item {
+.foto-description__text {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 48px;
+  margin-top: 0;
+  text-align: center;
   color: $color-night-rider;
-}
-
-.user__input {
-  background-color: $color-white-smoke;
-  border: none;
 }

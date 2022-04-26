@@ -1,5 +1,8 @@
 .booking__header {
-  padding: 61px 382px 66px 382px;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .booking__header-motivation {
@@ -22,18 +25,18 @@
 }
 
 .booking__header-button {
-  display: inline-block;
-  background-color: #81b3d2;
-  color: #ffffff;
+  display: inline-flex;
+  background-color: $color-seagull;
+  color: $color-default-white;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding: 15px 119px 17px 119px;
+  padding: 15px 50px 17px 50px;
   text-decoration: none;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .booking__map-size {
-  width: 1200px;
   height: 350px;
 }

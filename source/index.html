@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Городок Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-navigation__logo">
           <img
-            src="./images/logo.svg"
-            width="185"
+            src="./img/logo.svg"
             height="96"
             alt="Логотип Седоны."
           />
         </a>
-        <!-- <button
+        <button
           class="main-navigation__toggle"
           type="button"
           aria-label="Открыть/закрыть меню"
-        ></button> -->
-        <!-- <div class="main-navigation__wrapper"> -->
-          <ul class="main-navigation__list main-navigation__list-mobile">
-            <li
-              class="main-navigation__list-item main-navigation__list-item--active"
+        ></button>
+        <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list main-navigation__list-mobile">
+          <li
+            class="main-navigation__list-item main-navigation__list-item--active"
+          >
+            <a
+              class="main-navigation__link"
+              href="index.html"
+              aria-label="Главная страница"
+              >Главная</a
             >
-              <a class="navigation-link" href="#" aria-label="Главная страница"
-                >Главная</a
-              >
-            </li>
-            <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Фото и видео"
-                >Фото и Видео</a
-              >
-            </li>
-            <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Форма отзыва"
-                >Форма отзыва</a
-              >
-            </li>
-            <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Сайт Html Academy"
-                >Html Academy</a
-              >
-            </li>
-          </ul>
-        <!-- </div> -->
+          </li>
+          <li class="main-navigation__list-item">
+            <a
+              class="main-navigation__link"
+              href="catalog.html"
+              aria-label="Фото и видео"
+              >Фото и Видео</a
+            >
+          </li>
+          <li class="main-navigation__list-item">
+            <a
+              class="main-navigation__link"
+              href="form.html"
+              aria-label="Форма отзыва"
+              >Форма отзыва</a
+            >
+          </li>
+          <li class="main-navigation__list-item">
+            <a class="main-navigation__link" href="#" aria-label="Сайт Html Academy"
+              >Html Academy</a
+            >
+          </li>
+        </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
-      <section class="welcome welcom--main">
+      <section class="welcome welcome--main">
         <h1 class="visually-hidden">Приветствие на сайте Седоны</h1>
-        <img class="welcome__banner" src="images/welcomeopti.svg" alt="Добро пожаловать в Седону." />
+        <img
+          class="welcome__banner"
+          src="img/welcomeopti.svg"
+          alt="Добро пожаловать в Седону."
+        />
       </section>
       <section class="advantages">
         <div class="advantages__description">
@@ -72,26 +86,25 @@
             </p>
           </div>
           <img
-            src="./images/photo-table-one.jpg"
-            width="800"
+            src="./img/photo-table-one.jpg"
             height="256"
             alt="Кратинка с домами Седоны."
           />
         </div>
         <ul class="advantages__list">
-          <li class="advantages__list-item">
+          <li class="advantages__list-item advantages__list-itemhouse">
             <h2 class="advantages__item-title">Жилье</h2>
             <p class="advantages__item-description">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
-          <li class="advantages__list-item">
+          <li class="advantages__list-item advantages__list-itemeat">
             <h2 class="advantages__item-title">Еда</h2>
             <p class="advantages__item-description">
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="advantages__list-item">
+          <li class="advantages__list-item advantages__list-itemsouvenirs">
             <h2 class="advantages__item-title">Сувениры</h2>
             <p class="advantages__item-description">
               Не только китайского, но и местного производства!
@@ -100,8 +113,7 @@
         </ul>
         <div class="advantages__block-images">
           <img
-            src="./images/photo-table-two.jpg"
-            width="800"
+            src="./img/photo-table-two.jpg"
             height="256"
             alt="Кратинка окрестностей Седоны."
           />
@@ -113,7 +125,7 @@
             </p>
           </div>
         </div>
-        <ul class="advantages__list advantages__list-2">
+        <ul class="advantages__list advantages__list-color-whisper">
           <li class="advantages__list-item">
             <h2 class="advantages__item-title">Небольшая площадь</h2>
             <span class="advantages__item-num">— №3 —</span>
@@ -149,9 +161,10 @@
           >
         </div>
         <div class="booking__map">
-          <iframe class="booking__map-size"
+          <iframe
+            class="booking__map-size"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565763951!2d-111.83015795614082!3d34.854443815444746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1649191502014!5m2!1sru!2sru"
-            width="600"
+            width="100%"
             height="450"
             style="border: 0"
             allowfullscreen=""
@@ -162,14 +175,14 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="hashtag" href="#">#visitsedona</a>
+      <a class="footer__hashtag" href="#">#visitsedona</a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a
             class="footer__social-link footer__social-link--vk"
             href="https://vkontakte.com/htmlacademy_ru"
             aria-label="vkontakte"
-          >vk
+            >vk
           </a>
         </li>
         <li class="footer__social-item">
@@ -178,7 +191,8 @@
             href="https://telegram.com/htmlacademy_ru"
             aria-label="telegram"
           >
-          </a>tel
+          </a
+          >tel
         </li>
         <li class="footer__social-item">
           <a
@@ -186,11 +200,11 @@
             href="https://youtube.com/htmlacademy_ru"
             aria-label="youtube"
           >
-          </a>you
+          </a
+          >you
         </li>
       </ul>
       <a class="footer__developed-link" href="#">Разработано</a>
     </footer>
-
   </body>
 </html>

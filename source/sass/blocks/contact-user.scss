@@ -1,0 +1,31 @@
+.contact-user__list {
+  list-style-type: none;
+}
+
+.contact-user__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact-user__phone {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+}
+
+.contact-user__email {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+}
+
+.contact-user__input {
+  background-color: $color-white-smoke;
+  border: none;
+}
+
