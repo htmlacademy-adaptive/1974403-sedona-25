@@ -1,11 +1,13 @@
 // Fonts
+
 $font-family-main: "PT Sans", "Arial", sans-serif;
+
 // Default
 
 $color-default-black: #000000;
 $color-default-white: #ffffff;
 
-// Base
+// Color
 
 $color-whisper: #eeeeee;
 $color-whisper-2: #e7e5e5;
@@ -13,3 +15,9 @@ $color-seagull: #81b3d2;
 $color-night-rider: #333333;
 $color-white-smoke: #f2f2f2;
 $color-black-smoke: rgba(1, 1, 1, 0.2);
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

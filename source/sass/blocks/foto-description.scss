@@ -1,3 +1,20 @@
+.foto-description {
+  padding: 33px 20px 20px 20px;
+  border-bottom: 1px solid $color-whisper-2;
+}
+
+@media (min-width: $tablet-width) {
+  .foto-description {
+    padding: 66px 95px 67px 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .foto-description {
+    padding: 104px 320px 69px 320px;
+  }
+}
+
 .foto-description__title {
   font-size: 18px;
   line-height: 26px;
@@ -8,12 +25,28 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .foto-description__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
 .foto-description__text {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin-bottom: 48px;
-  margin-top: 0;
   text-align: center;
   color: $color-night-rider;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .foto-description__text {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $color-night-rider;
+    margin: 0;
+  }
 }

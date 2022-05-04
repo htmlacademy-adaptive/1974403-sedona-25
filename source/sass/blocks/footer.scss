@@ -1,6 +1,26 @@
 .footer {
   display: flex;
-  flex-direction: column;
+}
+
+@media (max-width: $mobile-width-only) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .footer__social-list {
@@ -21,7 +41,6 @@
 .footer__developed-link {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
