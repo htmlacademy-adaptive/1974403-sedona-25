@@ -1,26 +1,16 @@
 .booking__header {
   text-align: center;
-}
+  padding: 38px 18px 49px 18px;
 
-@media (max-width: $mobile-width-only) {
-  .booking__header {
-    padding-top: 38px 18px 49px 18px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .booking__header {
-    text-align: center;
+  @media (min-width: $tablet-width) {
     padding: 65px 155px 58px 155px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .booking__header {
-    text-align: center;
+  @media (min-width: $desktop-width) {
     padding-top: 61px 370px 66px 370px;
   }
 }
+
 
 .booking__header-motivation {
   text-align: center;
@@ -30,31 +20,12 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .booking__header-motivation {
-    text-align: center;
+  @media (min-width: $tablet-width) {
     font-size: 30px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .booking__header-motivation {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-}
 
 .booking__header-description {
   text-align: center;
@@ -63,25 +34,13 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 32px;
-}
 
-@media (min-width: $tablet-width) {
-  .booking__header-description {
-    text-align: center;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     color: $color-night-rider;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .booking__header-description {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 45px;
-    color: $color-night-rider;
-  }
-}
 
 .booking__header-button {
   display: inline-flex;
@@ -93,34 +52,9 @@
   padding: 16px 49px 16px 49px;
   text-decoration: none;
   text-transform: uppercase;
-}
 
-@media (min-width: $tablet-width) {
-  .booking__header-button {
-    display: inline-flex;
-    background-color: $color-seagull;
-    color: $color-default-white;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
+  @media (min-width: $tablet-width) {
     padding: 16px 121px 16px 121px;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .booking__header-button {
-    display: inline-flex;
-    background-color: $color-seagull;
-    color: $color-default-white;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    padding: 16px 121px 16px 121px;
-    text-decoration: none;
-    text-transform: uppercase;
     margin: 0 auto;
   }
 }

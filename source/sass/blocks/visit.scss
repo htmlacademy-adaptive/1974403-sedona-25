@@ -1,17 +1,15 @@
-@media (max-width: $mobile-width-only) {
-  .visit {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    border-style: none;
-    border-top: 1px solid #e7e5e5;
+.visit {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border-style: none;
+  border-top: 1px solid #e7e5e5;
+}
 
-    .visit__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  }
+.visit__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visit-list__item {
@@ -20,12 +18,10 @@
   font-weight: 700;
 }
 
-@media (max-width: $mobile-width-only) {
-  .visit__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-  }
+.visit__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }

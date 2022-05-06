@@ -1,21 +1,23 @@
-@media (max-width: $mobile-width-only) {
-  .impression {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    border-style: none;
-    border-top: 1px solid #e7e5e5;
-
-    .impression-list {
-      list-style-type: none;
-    }
-  }
+.impression {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border-style: none;
+  border-top: 1px solid #e7e5e5;
 }
 
 .impression-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.impression-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .impression-list__item {
@@ -52,14 +54,4 @@
   height: 11px;
   background-color: $color-night-rider;
   border-radius: 50%;
-}
-
-@media (max-width: $mobile-width-only) {
-  .impression-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-  }
 }

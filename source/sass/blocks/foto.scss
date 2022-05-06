@@ -1,118 +1,57 @@
-// .foto__images .foto__item-title {
-//   position: relative;
-//   bottom: 70px;
-//   left: 21px;
-//   font-size: 14px;
-//   line-height: 21px;
-//   text-transform: uppercase;
-//   color: $color-default-white;
-// }
-
-@media (min-width: $tablet-width) {
-  .foto {
+.foto {
+  @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .foto__images {
-    padding: 25px 20px 25px 20px;
-    border-bottom: 1px solid $color-whisper-2;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .foto__images {
+.foto__images {
+  padding: 25px 20px 25px 20px;
+  border-bottom: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
     background-color: $color-white-smoke;
   }
 }
 
-
-@media (min-width: $tablet-width) {
-  .foto__like {
+.foto__like {
+  @media (min-width: $tablet-width) {
     background-color: $color-white-smoke;
     display: block;
     right: 20px;
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .foto__images img {
-    margin-bottom: 15px;
-    height: 280px;
-  }
+.foto__images img {
+  margin-bottom: 15px;
+  height: 280px;
 }
 
-@media (min-width: $tablet-width) {
-  .foto__list {
-    margin: 0;
-    background-color: $color-white-smoke;
-  }
+
+.foto__item-title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-@media (max-width: $mobile-width-only) {
-  .foto__item-title {
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
+.foto__item-text {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-night-rider;
 }
-
-@media (max-width: $mobile-width-only) {
-  .foto__item-text {
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 21px;
-    color: $color-night-rider;
-  }
-}
-
-// .foto__item-text {
-//   position: relative;
-//   bottom: 85px;
-//   left: 21px;
-//   font-size: 14px;
-//   line-height: 21px;
-//   color: $color-default-white;
-// }
 
 .foto__list {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 25px 20px 25px 20px;
+  border-bottom: 1px solid $color-whisper-2;
 
-
-@media (max-width: $mobile-width-only) {
-  .foto__list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding: 25px 20px 25px 20px;
-    border-bottom: 1px solid $color-whisper-2;
+  @media (min-width: $tablet-width) {
+    background-color: $color-white-smoke;
   }
 }
-// .foto__list .foto__list-title {
-//   position: relative;
-//   bottom: 70px;
-//   left: 21px;
-//   font-size: 14px;
-//   line-height: 21px;
-//   text-transform: uppercase;
-//   color: $color-default-white;
-// }
-
-// .foto__list-text {
-//   position: relative;
-//   bottom: 85px;
-//   left: 21px;
-//   font-size: 14px;
-//   line-height: 21px;
-//   color: $color-default-white;
-// }

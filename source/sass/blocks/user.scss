@@ -1,26 +1,22 @@
-@media (max-width: $mobile-width-only) {
-  .user {
-    padding: 0;
-    border-style: none;
-
-    .user__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  }
+.user {
+  padding: 0;
+  border-style: none;
 }
 
-@media (max-width: $mobile-width-only) {
-  .user__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 24px;
-    margin-bottom: 20px;
-  }
+.user__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 20px;
 }
 
 .user__item {
