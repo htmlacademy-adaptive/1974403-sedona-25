@@ -1,0 +1,36 @@
+.message-form {
+  text-align: center;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message__description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message__textarea {
+  background-color: $color-white-smoke;
+  border: none;
+  height: 118px;
+  margin-bottom: 56px;
+}
+
+.message-form__footnote {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.message-form__button {
+  color: $color-default-white;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}

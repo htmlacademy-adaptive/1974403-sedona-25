@@ -1,16 +1,31 @@
 .booking__header {
-  padding: 61px 382px 66px 382px;
+  text-align: center;
+  padding: 38px 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 155px 58px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px 370px 66px 370px;
+  }
 }
+
 
 .booking__header-motivation {
   text-align: center;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
+
 
 .booking__header-description {
   text-align: center;
@@ -18,22 +33,32 @@
   line-height: 21px;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    color: $color-night-rider;
+  }
 }
 
+
 .booking__header-button {
-  display: inline-block;
-  background-color: #81b3d2;
-  color: #ffffff;
+  display: inline-flex;
+  background-color: $color-seagull;
+  color: $color-default-white;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding: 15px 119px 17px 119px;
+  padding: 16px 49px 16px 49px;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 121px 16px 121px;
+    margin: 0 auto;
+  }
 }
 
 .booking__map-size {
-  width: 1200px;
   height: 350px;
 }

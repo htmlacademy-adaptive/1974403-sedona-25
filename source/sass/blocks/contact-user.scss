@@ -1,0 +1,47 @@
+.contact-user {
+  padding: 0;
+  border-style: none;
+  border-top: 1px solid #e7e5e5;
+}
+
+.contact-user__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.contact-user__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-user__phone {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+  margin-bottom: 16px;
+}
+
+.contact-user__email {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+  margin-bottom: 16px;
+}
+
+.contact-user__input {
+  background-color: $color-white-smoke;
+  border: none;
+}

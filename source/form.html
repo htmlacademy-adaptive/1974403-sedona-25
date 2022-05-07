@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Городок Седона.</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,54 +12,53 @@
       <nav class="main-navigation">
         <a class="main-navigation__logo">
           <img
-            src="./images/logo.svg"
-            width="185"
+            src="./img/logo.svg"
             height="96"
             alt="Логотип Седоны."
           />
         </a>
-        <!-- <button
+        <button
           class="main-navigation__toggle"
           type="button"
           aria-label="Открыть/закрыть меню"
-        ></button> -->
-        <!-- <div class="main-navigation__wrapper"> -->
+        ></button>
+        <div class="main-navigation__wrapper">
           <ul class="main-navigation__list main-navigation__list-mobile">
             <li
               class="main-navigation__list-item"
             >
-              <a class="navigation-link" href="#" aria-label="Главная страница"
+              <a class="main-navigation__link" href="index.html" aria-label="Главная страница"
                 >Главная</a
               >
             </li>
             <li class="main-navigation__list-item main-navigation__list-item--active">
-              <a class="navigation-link" href="#" aria-label="Фото и видео"
+              <a class="main-navigation__link" href="catalog.html" aria-label="Фото и видео"
                 >Фото и Видео</a
               >
             </li>
             <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Форма отзыва"
+              <a class="main-navigation__link" href="form.html" aria-label="Форма отзыва"
                 >Форма отзыва</a
               >
             </li>
             <li class="main-navigation__list-item">
-              <a class="navigation-link" href="#" aria-label="Сайт Html Academy"
+              <a class="main-navigation__link" href="#" aria-label="Сайт Html Academy"
                 >Html Academy</a
               >
             </li>
           </ul>
-        <!-- </div> -->
+        </div>
       </nav>
     </header>
     <main class="main-form">
-      <section class="welcome">
+      <section class="welcome-catalog">
         <h1 class="visually-hidden">Приветствие на сайте Седоны</h1>
-        <img class="welcome__banner" src="./images/catalog/SEDONA.svg" alt="Добро пожаловать в Седону." />
+        <img class="welcome__banner" src="./img/catalog/sedona-welcome.svg" alt="Добро пожаловать в Седону." />
       </section>
       <section class="form">
-        <div class="foto__description">
-          <h2 class="foto__description-title">Оставьте свой отзыв</h2>
-          <p class="foto__description-text">
+        <div class="foto-description">
+          <h2 class="foto-description__title">Оставьте свой отзыв</h2>
+          <p class="foto-description__text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях
           </p>
@@ -66,30 +67,30 @@
           <fieldset class="user">
             <legend class="user__title">Представьтесь:</legend>
             <ul class="user__list">
-              <li>
+              <li class="user__item">
                 <label for="name">Имя*:</label>
-                <input type="text" id="name" name="user_name" />
+                <input class="user__input" type="text" id="name" name="user_name" placeholder="Петр" />
               </li>
-              <li>
+              <li class="user__item">
                 <label for="last-name">Фамилия*:</label>
-                <input type="text" id="last-name" name="user_last-name" />
+                <input class="user__input" type="text" id="last-name" name="user_last-name" placeholder="Пустота" />
               </li>
-              <li>
+              <li class="user__item">
                 <label for="patronymic">Отчество:</label>
-                <input type="text" id="patronymic" name="user_patronymic" />
+                <input class="user__input" type="text" id="patronymic" name="user_patronymic" placeholder="Викторович" />
               </li>
             </ul>
           </fieldset>
           <fieldset class="contact-user">
             <legend class="contact-user__title">Контактная информация:</legend>
             <ul class="contact-user__list">
-              <li class="contact-user-phone">
+              <li class="contact-user__phone">
                 <label for="phone">Контактный телефон*:</label>
-                <input type="text" id="phone" name="phone-number" />
+                <input class="user__input" type="text" id="phone" name="phone-number" placeholder="Введите телефон" />
               </li>
-              <li class="contact-user-email">
+              <li class="contact-user__email">
                 <label for="email">Электронная почта*:</label>
-                <input type="text" id="email" name="phone-number" />
+                <input class="user__input" type="text" id="email" name="phone-number" placeholder="Введите e-mail" />
               </li>
             </ul>
           </fieldset>
@@ -97,40 +98,51 @@
             <legend class="impression-title">Ваше общее впечатление:</legend>
             <ul class="impression-list">
               <li class="impression-list__item">
-                <label for="good">Скорее положительное</label>
+                <label class="impression-list__label" for="good">
                 <input
-                  class="impression-list__input"
+                  class="visually-hidden impression-list__input"
                   id="good"
                   type="radio"
                   name="good"
                   checked
                 />
+                <span class="impression-list__option"></span>
+                <span class="impression-list__name">Скорее положительное</span>
+              </label>
               </li>
               <li class="impression-list__item">
-                <label for="negative">Скорее отрицательное</label>
+                <label class="impression-list__label" for="good">
                 <input
-                  class="impression-list__input"
-                  id="negative"
+                  class="visually-hidden impression-list__input"
+                  id="good"
                   type="radio"
-                  name="negative"
+                  name="good"
+                  checked
                 />
+                <span class="impression-list__option"></span>
+                <span class="impression-list__name">Скорее отрицательное</span>
+              </label>
               </li>
               <li class="impression-list__item">
-                <label for="between">Затрудняюсь ответить</label>
+                <label class="impression-list__label" for="good">
                 <input
-                  class="impression-list__input"
-                  id="between"
+                  class="visually-hidden impression-list__input"
+                  id="good"
                   type="radio"
-                  name="between"
+                  name="good"
+                  checked
                 />
+                <span class="impression-list__option"></span>
+                <span class="impression-list__name">Затрудняюсь ответить</span>
+              </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="visit">
-            <legend class="visit-title">
+            <legend class="visit__title">
               Посещенные достопримечательности:
             </legend>
-            <ul class="visit-list">
+            <ul class="visit__list">
               <li class="visit-list__item">
                 <label for="evil">Мост дьявола</label>
                 <input
@@ -174,8 +186,8 @@
           </fieldset>
 
           <div class="message-form">
-            <label for="msg">Опишите свои эмоции:</label>
-            <textarea id="msg" name="user_message"></textarea>
+            <label class="message__description" for="msg">Опишите свои эмоции:</label>
+            <textarea class="message__textarea" id="msg" name="user_message" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="message-button">
               <button class="message-form__button" type="submit">
                 Отправить отзыв
@@ -186,7 +198,7 @@
         </form>
       </section>
       <footer class="footer">
-        <a class="hashtag" href="#">#visitsedona</a>
+        <a class="footer__hashtag" href="#">#visitsedona</a>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a

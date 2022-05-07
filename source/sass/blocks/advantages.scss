@@ -1,31 +1,65 @@
 .advantages__description {
   text-align: center;
-  padding: 47px 125px 56px 125px;
+  padding: 47px 50px 56px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 124px 56px 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 358px 45px 358px;
+  }
 }
 
 .advantages__description-title {
-  font-size: 21px;
+  text-align: center;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 35px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description-text {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-top: 0;
+}
+
+.advantages__block-picture {
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
 }
 
 .advantages__block-images {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 256px;
+  }
 }
 
 .advantages__block {
-  padding: 47px 32px 42px 32px;
-  background-color: #81b3d2;
-  width: 400px;
-  color: #ffffff;
+  padding: 40px 32px 43px 32px;
+  background-color: $color-seagull;
+  color: $color-default-white;
+  font-family: $font-family-main;
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 57px 32px;
+  }
 }
 
 .advantages__block-title {
@@ -33,9 +67,13 @@
   margin-bottom: 25px;
   margin-top: 0;
   padding: 0;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__item-num {
@@ -57,34 +95,115 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   text-align: center;
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 256px;
+  }
 }
 
-.advantages__list-2 {
-  background-color: #eeeeee;
+.advantages__list-color-whisper {
+  background-color: $color-whisper;
 }
 
 .advantages__list-item {
   margin: 0;
-  padding: 43px 51px 62px 51px;
+  padding: 26px 26px 26px 26px;
+  position: relative;
+  text-align: center;
 }
 
 .advantages__item-title {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .advantages__item-description {
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
+  color: $color-night-rider;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.advantages__list-house::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 1%;
+  top: 15px;
+  width: 40px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 40%;
+    top: 60px;
+  }
+}
+
+.advantages__list-eat::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 1%;
+  top: 15px;
+  width: 40px;
+  height: 37px;
+  background-image: url("../img/icon-burger.svg");
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 40%;
+    top: 60px;
+  }
+}
+
+.advantages__list-souvenirs::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 1%;
+  top: 15px;
+  width: 40px;
+  height: 37px;
+  background-image: url("../../img/icon-podarok.svg");
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 40%;
+    top: 60px;
+  }
+}
+
+.advantages__list-house, .advantages__list-eat, .advantages__list-souvenirs {
+  padding: 23px 15px 22px 47px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 157px 35px 60px 35px;
+  }
 }

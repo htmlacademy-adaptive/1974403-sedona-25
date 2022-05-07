@@ -1,29 +1,35 @@
 .footer {
   display: flex;
-  justify-content: space-between;
-  padding: 36px 110px 36px 110px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    flex-direction: initial;
+    justify-content: space-around;
+  }
 }
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
 }
 
-.hashtag {
+.footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .footer__developed-link {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
