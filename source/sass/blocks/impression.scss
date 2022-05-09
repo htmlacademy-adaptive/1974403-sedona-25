@@ -3,13 +3,25 @@
   font-size: 18px;
   line-height: 26px;
   border-style: none;
-  border-top: 1px solid #e7e5e5;
+  border-top: 1px solid $color-whisper-2;
+  padding: 0;
 }
 
 .impression-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 28px 36px 48px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .impression-title {
@@ -18,18 +30,36 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 20px;
+  padding: 0 40px;
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
 }
 
 .impression-list__item {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
 }
 
 .impression-list__label {
   position: relative;
   display: block;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .impression-list__input[type="radio"] + .impression-list__option {
@@ -45,7 +75,8 @@
   background-color: $color-white-smoke;
 }
 
-.impression-list__input[type="radio"]:checked + .impression-list__option::before {
+.impression-list__input[type="radio"]:checked
+  + .impression-list__option::before {
   content: "";
   position: absolute;
   top: 6px;

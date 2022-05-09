@@ -3,19 +3,26 @@
   font-size: 18px;
   line-height: 26px;
   border-style: none;
-  border-top: 1px solid #e7e5e5;
+  border-top: 1px solid $color-whisper-2;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
-.visit__list {
-  list-style-type: none;
+.visit-list {
+  list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.visit-list__item {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 28px 36px 48px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .visit__title {
@@ -24,4 +31,56 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 20px;
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
+}
+
+.visit-list__item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
+}
+
+.visit-list__label {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.visit-list__input[type="checkbox"] + .visit-list__option {
+  border-radius: 4px;
+}
+
+.visit-list__option {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  background-color: $color-white-smoke;
+}
+
+.visit-list__input[type="checkbox"]:checked + .visit-list__option::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form/tick.svg.svg");
 }

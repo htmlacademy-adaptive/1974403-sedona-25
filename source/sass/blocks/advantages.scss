@@ -103,7 +103,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 256px;
   }
 }
 
@@ -188,7 +187,7 @@
   top: 15px;
   width: 40px;
   height: 37px;
-  background-image: url("../../img/icon-podarok.svg");
+  background-image: url("../img/icon-podarok.svg");
   background-size: contain;
 
   @media (min-width: $tablet-width) {
@@ -199,7 +198,9 @@
   }
 }
 
-.advantages__list-house, .advantages__list-eat, .advantages__list-souvenirs {
+.advantages__list-house,
+.advantages__list-eat,
+.advantages__list-souvenirs {
   padding: 23px 15px 22px 47px;
   text-align: left;
 

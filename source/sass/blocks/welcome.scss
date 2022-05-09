@@ -1,19 +1,14 @@
-.welcome {
+.welcome--main {
   background-color: $color-default-white;
   background-image: url("../img/index-background-index-page.jpg");
   padding: 40px;
   position: relative;
 }
 
-.welcome img {
-  display: block;
-  margin: 0 auto;
-}
-
-.welcome::before {
+.welcome--main::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/down-welcome-mobile.svg");
+  background-image: url("../img/down-welcome-mobile.svg");
   min-width: 100%;
   height: 56px;
   background-repeat: no-repeat;
@@ -21,26 +16,24 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/down-welcome-tablet.svg");
-    min-width: 100%;
-    height: 56px;
-    background-repeat: no-repeat;
-    bottom: 0;
-    left: 0;
+    background-image: url("../img/down-welcome-tablet.svg");
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/down-welcome-desktop.svg");
-    min-width: 100%;
-    height: 56px;
-    background-repeat: no-repeat;
-    bottom: 0;
-    left: 0;
+    background-image: url("../img/down-welcome-desktop.svg");
   }
 }
 
+.welcome {
+  background-color: $color-default-white;
+  background-image: url("../img/catalog/back-desktop.jpg");
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
 
+.welcome img {
+  display: block;
+  margin: 0 auto;
+}

@@ -51,12 +51,12 @@
       </nav>
     </header>
     <main class="main-form">
-      <section class="welcome-catalog">
+      <section class="welcome">
         <h1 class="visually-hidden">Приветствие на сайте Седоны</h1>
         <img class="welcome__banner" src="./img/catalog/sedona-welcome.svg" alt="Добро пожаловать в Седону." />
       </section>
       <section class="form">
-        <div class="foto-description">
+        <div class="foto-description foto-description--user">
           <h2 class="foto-description__title">Оставьте свой отзыв</h2>
           <p class="foto-description__text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
@@ -64,11 +64,12 @@
           </p>
         </div>
         <form action="https://echo.htmlacademy.ru/" method="get">
+          <div class="form__list-name">
           <fieldset class="user">
             <legend class="user__title">Представьтесь:</legend>
             <ul class="user__list">
               <li class="user__item">
-                <label for="name">Имя*:</label>
+                <label for="name">Имя*: </label>
                 <input class="user__input" type="text" id="name" name="user_name" placeholder="Петр" />
               </li>
               <li class="user__item">
@@ -84,16 +85,18 @@
           <fieldset class="contact-user">
             <legend class="contact-user__title">Контактная информация:</legend>
             <ul class="contact-user__list">
-              <li class="contact-user__phone">
-                <label for="phone">Контактный телефон*:</label>
+              <li class="contact-user__item">
+                <label class="contact-user__phone--svg" for="phone">Контактный телефон*:</label>
                 <input class="user__input" type="text" id="phone" name="phone-number" placeholder="Введите телефон" />
               </li>
-              <li class="contact-user__email">
-                <label for="email">Электронная почта*:</label>
+              <li class="contact-user__item">
+                <label class="contact-user__email--svg" for="email">Электронная почта*:</label>
                 <input class="user__input" type="text" id="email" name="phone-number" placeholder="Введите e-mail" />
               </li>
             </ul>
           </fieldset>
+          </div>
+          <div class="form__list-review">
           <fieldset class="impression">
             <legend class="impression-title">Ваше общее впечатление:</legend>
             <ul class="impression-list">
@@ -142,49 +145,61 @@
             <legend class="visit__title">
               Посещенные достопримечательности:
             </legend>
-            <ul class="visit__list">
+            <ul class="visit-list">
               <li class="visit-list__item">
-                <label for="evil">Мост дьявола</label>
+                <label class="visit-list__label" for="evil">
                 <input
-                  class="visit-list__input"
+                  class="visually-hidden visit-list__input"
                   id="evil"
                   type="checkbox"
                   name="evil"
                   checked
                 />
+                <span class="impression-list__option"></span>
+                <span class="impression-list__name">Мост дьявола</span>
+                </label>
               </li>
               <li class="visit-list__item">
-                <label for="bell">Гора-колокол</label>
+                <label class="visit-list__label" for="evil">
                 <input
-                  class="visit-list__input"
-                  id="bell"
+                  class="visually-hidden visit-list__input"
+                  id="evil"
                   type="checkbox"
-                  name="bell"
+                  name="evil"
                   checked
                 />
+                <span class="visit-list__option"></span>
+                <span class="visit-list__name">Гора-колокол</span>
+                </label>
               </li>
               <li class="visit-list__item">
-                <label for="garden">Слайд-парк</label>
+                <label class="visit-list__label" for="evil">
                 <input
-                  class="visit-list__input"
-                  id="garden"
+                  class="visually-hidden visit-list__input"
+                  id="evil"
                   type="checkbox"
-                  name="garden"
+                  name="evil"
                   checked
                 />
+                <span class="visit-list__option"></span>
+                <span class="visit-list__name">Слайд-парк</span>
+                </label>
               </li>
               <li class="visit-list__item">
-                <label for="rock">Красные скалы</label>
+                <label class="visit-list__label" for="evil">
                 <input
-                  class="visit-list__input"
-                  id="rock"
+                  class="visually-hidden visit-list__input"
+                  id="evil"
                   type="checkbox"
-                  name="rock"
+                  name="evil"
                 />
+                <span class="visit-list__option"></span>
+                <span class="visit-list__name">Красные скалы</span>
+                </label>
               </li>
             </ul>
           </fieldset>
-
+          </div>
           <div class="message-form">
             <label class="message__description" for="msg">Опишите свои эмоции:</label>
             <textarea class="message__textarea" id="msg" name="user_message" placeholder="Опишите подробно все свои восторги"></textarea>
