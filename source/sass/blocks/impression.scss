@@ -69,18 +69,17 @@
 .impression-list__option {
   position: absolute;
   top: 0;
-  left: -10px;
-  width: 25px;
-  height: 25px;
+  left: -20px;
+  width: 30px;
+  height: 30px;
   background-color: $color-white-smoke;
 }
 
-.impression-list__input[type="radio"]:checked
-  + .impression-list__option::before {
+.impression-list__input[type="radio"]:checked + .impression-list__option::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 9px;
+  left: 9px;
   width: 11px;
   height: 11px;
   background-color: $color-night-rider;
