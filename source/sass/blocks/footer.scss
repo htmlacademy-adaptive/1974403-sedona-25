@@ -12,6 +12,21 @@
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin: 0;
+  padding: 0 82px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+  }
+}
+
+.footer__social-item {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
 }
 
 .footer__hashtag {
@@ -19,18 +34,36 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 38px;
+  margin-bottom: 33px;
   text-transform: uppercase;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .footer__developed-link {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 47px;
+  margin-bottom: 29px;
   text-transform: uppercase;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
+.footer__developed-link::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/htmlacademy.svg");
+  background-size: contain;
 }

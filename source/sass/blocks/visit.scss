@@ -55,7 +55,7 @@
 .visit-list__label {
   position: relative;
   display: block;
-  padding-left: 20px;
+  padding-left: 62px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -68,19 +68,21 @@
 
 .visit-list__option {
   position: absolute;
-  top: 0;
-  left: -10px;
-  width: 24px;
-  height: 24px;
+  top: 50%;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  transform: translateY(-50%);
   background-color: $color-white-smoke;
 }
 
 .visit-list__input[type="checkbox"]:checked + .visit-list__option::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 50%;
+  left: 50%;
   width: 22px;
   height: 16px;
   background-image: url("../img/form/tick.svg.svg");
+  transform: translate(-50%, -50%);
 }
