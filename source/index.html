@@ -9,53 +9,54 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-navigation">
+      <a class="main-header__logo">
+        <img src="./img/logo.svg" height="96" alt="Логотип Седоны." />
+      </a>
+      <nav
+        class="main-navigation main-navigation--closed main-navigation--nojs"
+      >
         <button
           class="main-navigation__toggle"
           type="button"
           aria-label="Открыть/закрыть меню"
         ></button>
         <div class="main-navigation__wrapper">
-          <a class="main-navigation__logo">
-            <img
-              src="./img/logo.svg"
-              height="96"
-              alt="Логотип Седоны."
-            />
-          </a>
-        <ul class="main-navigation__list main-navigation__list-mobile">
-          <li
-            class="main-navigation__list-item main-navigation__list-item--active"
-          >
-            <a
-              class="main-navigation__link"
-              href="index.html"
-              aria-label="Главная страница"
-              >Главная</a
+          <ul class="main-navigation__list main-navigation__list-mobile">
+            <li
+              class="main-navigation__list-item main-navigation__list-item--active"
             >
-          </li>
-          <li class="main-navigation__list-item">
-            <a
-              class="main-navigation__link"
-              href="catalog.html"
-              aria-label="Фото и видео"
-              >Фото и Видео</a
-            >
-          </li>
-          <li class="main-navigation__list-item">
-            <a
-              class="main-navigation__link"
-              href="form.html"
-              aria-label="Форма отзыва"
-              >Форма отзыва</a
-            >
-          </li>
-          <li class="main-navigation__list-item">
-            <a class="main-navigation__link" href="#" aria-label="Сайт Html Academy"
-              >Html Academy</a
-            >
-          </li>
-        </ul>
+              <a
+                class="main-navigation__link"
+                href="index.html"
+                aria-label="Главная страница"
+                >Главная</a
+              >
+            </li>
+            <li class="main-navigation__list-item">
+              <a
+                class="main-navigation__link"
+                href="catalog.html"
+                aria-label="Фото и видео"
+                >Фото и Видео</a
+              >
+            </li>
+            <li class="main-navigation__list-item">
+              <a
+                class="main-navigation__link"
+                href="form.html"
+                aria-label="Форма отзыва"
+                >Форма отзыва</a
+              >
+            </li>
+            <li class="main-navigation__list-item">
+              <a
+                class="main-navigation__link"
+                href="#"
+                aria-label="Сайт Html Academy"
+                >Html Academy</a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -85,7 +86,8 @@
               Седона не атракцион для туристов, там течет своя жизнь
             </p>
           </div>
-          <img class="advantages__block-picture"
+          <img
+            class="advantages__block-picture"
             src="./img/photo-table-one.jpg"
             alt="Кратинка с домами Седоны."
           />
@@ -97,7 +99,7 @@
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
-          <li class="advantages__list-item  advantages__list-eat">
+          <li class="advantages__list-item advantages__list-eat">
             <h2 class="advantages__item-title">Еда</h2>
             <p class="advantages__item-description">
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
@@ -111,7 +113,8 @@
           </li>
         </ul>
         <div class="advantages__block-images">
-          <img class="advantages__block-picture"
+          <img
+            class="advantages__block-picture"
             src="./img/photo-table-two.jpg"
             height="256"
             alt="Кратинка окрестностей Седоны."
@@ -205,5 +208,6 @@
       </ul>
       <a class="footer__developed-link" href="#">Разработано</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

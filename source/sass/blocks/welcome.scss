@@ -1,19 +1,13 @@
-.welcome {
+.welcome--main {
   background-color: $color-default-white;
   background-image: url("../img/index-background-index-page.jpg");
   padding: 40px;
-  position: relative;
-}
-
-.welcome img {
-  display: block;
-  margin: 0 auto;
 }
 
 .welcome::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/down-welcome-mobile.svg");
+  background-image: url("../img/down-welcome-mobile.svg");
   min-width: 100%;
   height: 56px;
   background-repeat: no-repeat;
@@ -21,26 +15,43 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/down-welcome-tablet.svg");
-    min-width: 100%;
-    height: 56px;
-    background-repeat: no-repeat;
-    bottom: 0;
-    left: 0;
+    background-image: url("../img/down-welcome-tablet.svg");
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/down-welcome-desktop.svg");
-    min-width: 100%;
-    height: 56px;
-    background-repeat: no-repeat;
-    bottom: 0;
-    left: 0;
+    background-image: url("../img/down-welcome-desktop.svg");
   }
 }
 
+.welcome {
+  background-color: $color-default-white;
+  background-image: url("../img/catalog/back-desktop.jpg");
+  padding: 52px 45px 10px 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding: 95px 155px 60px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 370px 63px 370px;
+  }
+}
+
+.welcome img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 60px;
+  }
+}
