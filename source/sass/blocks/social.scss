@@ -1,0 +1,42 @@
+.social__item {
+  width: 48px;
+  height: 48px;
+  position: relative;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: $color-white-sail;
+    background-color: $color-shakespeare-2;
+  }
+}
+
+.social__item .social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vk {
+    background-image: url("../../img/social-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/social-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/social-youtube.svg");
+  }
+}

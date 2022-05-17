@@ -37,9 +37,20 @@
   }
 }
 
-.foto__like-images::before {
-  content: "";
-  background-image: url("../img/like-icon.svg");
+.foto__like-images {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    justify-self: end;
+  }
 }
 
 .foto__images img {
