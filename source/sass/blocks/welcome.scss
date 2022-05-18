@@ -1,7 +1,32 @@
+.welcome {
+  background-color: $color-whisper;
+  background-image: url("../img/catalog/back-desktop.jpg");
+  padding: 52px 40px 52px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 95px 40px 117px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 103px 40px 122px 40px;
+  }
+}
+
 .welcome--main {
-  background-color: $color-default-white;
   background-image: url("../img/index-background-index-page.jpg");
-  padding: 40px;
+  padding: 90px 40px 85px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 40px 90px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 40px 90px 40px;
+  }
 }
 
 .welcome::before {
@@ -11,7 +36,9 @@
   min-width: 100%;
   height: 56px;
   background-repeat: no-repeat;
-  bottom: 0;
+  background-size: cover;
+  background-position: bottom;
+  bottom: -1px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -23,35 +50,7 @@
   }
 }
 
-.welcome {
-  background-color: $color-default-white;
-  background-image: url("../img/catalog/back-desktop.jpg");
-  padding: 52px 45px 10px 45px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 200px;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    padding: 95px 155px 60px 155px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 101px 370px 63px 370px;
-  }
-}
-
 .welcome img {
   display: block;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 95px;
-    padding-bottom: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 101px;
-    padding-bottom: 60px;
-  }
 }
