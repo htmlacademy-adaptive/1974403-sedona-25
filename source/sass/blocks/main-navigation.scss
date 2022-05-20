@@ -2,6 +2,14 @@
   width: 100%;
   padding: 0;
   margin: 0;
+
+  &--opened {
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    z-index: 0;
+  }
 }
 
 .main-navigation__toggle {

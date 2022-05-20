@@ -1,15 +1,20 @@
 .user {
   padding: 0;
   border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
+    padding-right: 46px;
     margin-bottom: 20px;
     border-right: 1px solid $color-gainsboro;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 60px;
+    padding-right: 63px;
+    margin-bottom: 71px;
     border-right: 1px solid $color-gainsboro;
+    border-bottom: none;
   }
 }
 
@@ -41,7 +46,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $color-night-rider;
-  margin-bottom: 16px;
+  margin-bottom: 39px;
 }
 
 .user__item label {
@@ -63,16 +68,21 @@
   font-family: inherit;
 
   &:hover {
-    background-color: rgba(229, 229, 229, 1);
+    background-color: $color-whisper-2;
   }
 
   &:active {
     background-color: $color-default-white;
-    box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
+    box-shadow: 0 0 0 4px $color-whisper-2;
+  }
+
+  &:focus {
+    background-color: $color-whisper-2;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 280px;
+    max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {

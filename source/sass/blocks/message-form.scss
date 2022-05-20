@@ -2,6 +2,14 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 24px 20px;
+  border-style: none;
+  border-top: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 96px;
@@ -19,6 +27,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 28px;
+    padding: 0 100px;
   }
 }
 
@@ -40,14 +49,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 80.5%;
+    max-width: 100%;
   }
 }
 
 .message-form__wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 
@@ -86,8 +98,11 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $color-night-rider;
+  align-self: flex-end;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    order: 2;
+    margin-left: auto;
   }
 }
