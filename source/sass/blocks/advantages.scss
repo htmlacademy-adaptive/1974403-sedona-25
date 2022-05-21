@@ -145,7 +145,7 @@
       bottom: 0;
       width: 284px;
       height: 1px;
-      background-color: rgba(214, 214, 214, 1);
+      background-color: $color-light-grey;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -173,7 +173,7 @@
       left: 18px;
       width: 284px;
       height: 1px;
-      background-color: rgba(214, 214, 214, 1);
+      background-color: $color-light-grey;
 
       @media (min-width: $tablet-width) {
         display: none;

@@ -81,7 +81,7 @@
 .footer__developed-logo {
   align-self: center;
   margin: 0;
-  fill: rgba(0, 0, 0, 1);
+  fill: $color-default-black;
 }
 
 .footer__developed-link {
@@ -94,21 +94,21 @@
 
   &:hover {
     .footer__developed-description {
-      color: rgba(129, 179, 210, 1);
+      color: $color-seagull;
     }
 
     .footer__developed-logo {
-      fill: rgba(129, 179, 210, 1);
+      fill: $color-seagull;
     }
   }
 
   &:active {
     .footer__developed-description {
-      color: rgba(179, 179, 179, 1);
+      color: $color-pink-swan;
     }
 
     .footer__developed-logo {
-      fill: rgba(179, 179, 179, 1);
+      fill: $color-pink-swan;
     }
   }
 
@@ -116,11 +116,11 @@
     outline: none;
 
     .footer__developed-description {
-      color: rgba(129, 179, 210, 1);
+      color: $color-seagull;
     }
 
     .footer__developed-logo {
-      fill: rgba(129, 179, 210, 1);
+      fill: $color-seagull;
     }
   }
 

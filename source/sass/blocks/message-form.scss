@@ -76,11 +76,11 @@
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(102, 158, 192, 1);
+    background-color: $color-shakespeare;
   }
 
   &:active {
-    background-color: rgba(84, 150, 189, 1);
+    background-color: $color-shakespeare;
   }
 
   @media (min-width: $tablet-width) {
