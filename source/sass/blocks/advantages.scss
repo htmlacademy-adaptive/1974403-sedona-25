@@ -65,6 +65,12 @@
   }
 }
 
+.advantages__block-images picture {
+  @media (min-width: $tablet-width) {
+    width: 66.6%;
+  }
+}
+
 
 .advantages__block {
   padding: 49px 20px 43px 18px;
@@ -72,7 +78,8 @@
   color: $color-default-white;
   font-family: $font-family-main;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 33.4%;
     padding: 40px 32px 44px;
   }
 

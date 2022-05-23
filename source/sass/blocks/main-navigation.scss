@@ -90,6 +90,10 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-default-white;
+
+    &--active {
+      color: $color-roman-coffee;
+    }
   }
 }
 
@@ -116,6 +120,12 @@
 
     &:hover {
       background-color: $color-default-white;
+      color: $color-seagull;
+    }
+
+    &:active {
+      color: $color-default-black;
+      opacity: 0.3;
     }
   }
 }

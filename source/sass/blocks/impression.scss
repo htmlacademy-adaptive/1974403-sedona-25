@@ -83,6 +83,14 @@
   height: 46px;
   transform: translateY(-50%);
   background-color: $color-white-smoke;
+
+  &:hover {
+    background-color: $color-whisper-2;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+  }
 }
 
 .impression-list__input[type="radio"]:checked + .impression-list__option::before {
@@ -95,4 +103,8 @@
   background-color: $color-night-rider;
   border-radius: 50%;
   transform: translateY(-50%);
+}
+
+.impression-list__input[type="radio"]:checked:active + .impression-list__option::before {
+  opacity: 0.3;
 }

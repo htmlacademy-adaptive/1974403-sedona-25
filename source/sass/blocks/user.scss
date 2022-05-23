@@ -1,5 +1,5 @@
 .user {
-  padding: 0;
+  padding: 0 20px;
   border-style: none;
   border-bottom: 1px solid $color-whisper-2;
 
@@ -74,11 +74,6 @@
   &:active {
     background-color: $color-default-white;
     box-shadow: 0 0 0 4px $color-whisper-2;
-  }
-
-  &:focus {
-    background-color: $color-whisper-2;
-    outline: none;
   }
 
   @media (min-width: $tablet-width) {

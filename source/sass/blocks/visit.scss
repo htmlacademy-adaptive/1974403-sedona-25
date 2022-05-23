@@ -3,7 +3,6 @@
   font-size: 18px;
   line-height: 26px;
   border-style: none;
-  border-bottom: 1px solid $color-whisper-2;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -81,6 +80,14 @@
   height: 46px;
   transform: translateY(-50%);
   background-color: $color-white-smoke;
+
+  &:hover {
+    background-color: $color-whisper-2;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+  }
 }
 
 .visit-list__input[type="checkbox"]:checked + .visit-list__option::before {
@@ -92,4 +99,8 @@
   height: 16px;
   background-image: url("../img/form/tick.svg.svg");
   transform: translate(-50%, -50%);
+}
+
+.visit-list__input[type="checkbox"]:checked:active + .visit-list__option::before {
+  opacity: 0.3;
 }

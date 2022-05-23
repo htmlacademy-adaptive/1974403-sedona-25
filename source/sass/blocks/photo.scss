@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 104px 320px 69px 320px;
+    padding: 104px 262px 69px 263px;
   }
 }
 
@@ -160,8 +160,9 @@
   @media (min-width: $desktop-width) {
     margin-top: -80px;
     color: $color-default-white;
-    background-color: $color-default-black;
-    opacity: 80%;
+    background-color: rgba($color-default-black, 0.5);
+    z-index: 1;
+    position: relative;
   }
 }
 
@@ -188,6 +189,8 @@
 .photos__title {
   margin: 0;
   font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .photos__author {
