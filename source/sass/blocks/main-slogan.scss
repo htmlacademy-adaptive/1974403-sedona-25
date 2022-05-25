@@ -1,8 +1,8 @@
 .main-slogan {
   height: 389px;
   position: relative;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 0, 0, 1);
+  color: $color-default-white;
+  background-color: $color-whisper;
   background-image: url("../img/intro/welcome-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,6 +22,7 @@
     background-position: center;
     background-repeat: no-repeat;
     bottom: -2px;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {

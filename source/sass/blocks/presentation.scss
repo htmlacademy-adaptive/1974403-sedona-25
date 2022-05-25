@@ -49,8 +49,22 @@
 
 .presentation__video-block {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  text-align: center;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.presentation__video-block img {
+  min-height: 177px;
+  min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .presentation__video-button {
@@ -65,4 +79,5 @@
   left: 50%;
   bottom: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }

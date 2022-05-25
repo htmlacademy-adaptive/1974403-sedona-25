@@ -3,8 +3,13 @@
   font-size: 18px;
   line-height: 26px;
   border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
   border-top: 1px solid $color-whisper-2;
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .impression-list {
@@ -31,12 +36,15 @@
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
-  padding: 0 40px;
-  background-color: $color-default-white;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    margin-bottom: 28px;
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-bottom: 28px;
+      padding: 0 100px;
+      background-color: transparent;
+    }
   }
 }
 
@@ -44,7 +52,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -64,6 +72,7 @@
 
 .impression-list__input[type="radio"] + .impression-list__option {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .impression-list__option {
@@ -74,16 +83,28 @@
   height: 46px;
   transform: translateY(-50%);
   background-color: $color-white-smoke;
+
+  &:hover {
+    background-color: $color-whisper-2;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+  }
 }
 
 .impression-list__input[type="radio"]:checked + .impression-list__option::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   width: 16px;
   height: 16px;
   background-color: $color-night-rider;
   border-radius: 50%;
   transform: translateY(-50%);
+}
+
+.impression-list__input[type="radio"]:checked:active + .impression-list__option::before {
+  opacity: 0.3;
 }

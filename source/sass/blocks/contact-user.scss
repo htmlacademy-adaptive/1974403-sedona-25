@@ -1,11 +1,43 @@
 .contact-user {
-  padding: 0;
+  padding: 0 20px;
   border-style: none;
-  border-top: 1px solid $color-whisper-2;
+  border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     border: none;
+    padding: 0 0 46px 0;
+    max-height: 433px;
   }
+}
+
+.contact-user__phone::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $color-whisper-2;
+  background-image: url("../img/phone.svg");
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.contact-user__email::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $color-whisper-2;
+  background-image: url("../../img/mail.svg");
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
 }
 
 .contact-user__item label {
@@ -29,6 +61,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
@@ -43,7 +76,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $color-night-rider;
-  margin-bottom: 16px;
+  margin-bottom: 39px;
+  position: relative;
 }
 
 .contact-user__input {
