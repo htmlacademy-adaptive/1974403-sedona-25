@@ -1,0 +1,119 @@
+.message-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  border-style: none;
+  border-top: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 96px;
+  }
+}
+
+.message__description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+    padding: 0 100px;
+  }
+}
+
+.message__textarea {
+  background-color: $color-white-smoke;
+  border: none;
+  min-width: 279px;
+  min-height: 150px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 16px;
+  resize: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 56px;
+
+  &:hover {
+    background-color: $color-whisper-2;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    box-shadow: 0 0 0 4px $color-whisper-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
+.message-form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.message-form__button {
+  color: $color-default-white;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: $color-seagull;
+  border: none;
+  height: 58px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
+}
+
+.message-form__footnote {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+  align-self: flex-end;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    order: 2;
+    margin-left: auto;
+  }
+}

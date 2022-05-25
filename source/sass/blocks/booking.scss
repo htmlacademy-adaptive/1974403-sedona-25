@@ -1,15 +1,29 @@
 .booking__header {
-  padding: 61px 382px 66px 382px;
+  text-align: center;
+  padding: 39px 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 155px 58px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px 370px 66px 370px;
+  }
 }
 
-.booking__header-motivation {
+.booking__header-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .booking__header-description {
@@ -18,22 +32,53 @@
   line-height: 21px;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+    color: $color-night-rider;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .booking__header-button {
-  display: inline-block;
-  background-color: #81b3d2;
-  color: #ffffff;
+  display: inline-flex;
+  background-color: $color-seagull;
+  color: $color-default-white;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding: 15px 119px 17px 119px;
+  padding: 16px 55px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: $font-family-main;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 121px 17px 121px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 458px;
+  }
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: $color-white-sail;
+    background-color: $color-shakespeare-2;
+  }
+
+  &:disabled {
+    background-color: $color-whisper-2;
+  }
 }
 
 .booking__map-size {
-  width: 1200px;
-  height: 350px;
+  min-height: 350px;
 }
