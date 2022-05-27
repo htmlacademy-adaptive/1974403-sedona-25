@@ -1,5 +1,5 @@
 .contact-user {
-  padding: 0 20px;
+  padding: 0 20px 19px;
   border-style: none;
   border-bottom: 1px solid $color-whisper-2;
 
@@ -9,6 +9,10 @@
     border: none;
     padding: 0 0 46px 0;
     max-height: 433px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid $color-gainsboro;
   }
 }
 
@@ -41,7 +45,15 @@
 }
 
 .contact-user__item label {
-  margin-left: 16px;
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 13px;
+  }
 }
 
 .contact-user__list {
@@ -51,6 +63,10 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 78px;
   }
 }
 
@@ -67,6 +83,10 @@
     margin-bottom: 28px;
     font-size: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 12px;
+  }
 }
 
 .contact-user__item {
@@ -76,7 +96,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $color-night-rider;
-  margin-bottom: 39px;
+  margin-bottom: 15px;
   position: relative;
 }
 

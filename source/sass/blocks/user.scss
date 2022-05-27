@@ -1,19 +1,19 @@
 .user {
-  padding: 0 20px;
+  padding: 0 20px 24px;
   border-style: none;
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
-    padding-right: 46px;
+    padding: 0 46px 20px 0;
     margin-bottom: 20px;
     border-right: 1px solid $color-gainsboro;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 63px;
-    margin-bottom: 71px;
-    border-right: 1px solid $color-gainsboro;
+    padding-right: 47px;
+    margin-bottom: 29px;
+    border-right: none;
     border-bottom: none;
   }
 }
@@ -36,6 +36,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
     font-size: 21px;
+    padding-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 64px;
   }
 }
 
@@ -46,11 +51,19 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $color-night-rider;
-  margin-bottom: 39px;
+  margin-bottom: 16px;
 }
 
 .user__item label {
-  margin-left: 16px;
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+  }
 }
 
 .user__input {
@@ -61,11 +74,16 @@
   font-weight: 700;
   color: $color-default-black;
   height: 58px;
-  padding-left: 16px;
+  padding-left: 14px;
   width: 100%;
   cursor: pointer;
   outline: none;
   font-family: inherit;
+
+  &:focus {
+    background-color: $color-whisper-2;
+    outline: none;
+  }
 
   &:hover {
     background-color: $color-whisper-2;
@@ -78,9 +96,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    padding-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 430px;
+    padding-left: 14px;
   }
 }

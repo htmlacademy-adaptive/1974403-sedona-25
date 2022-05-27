@@ -2,19 +2,22 @@
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .photo-description {
-  padding: 33px 20px 28px 20px;
-  border-bottom: 1px solid $color-whisper-2;
+  padding: 40px 20px 34px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 95px 67px 95px;
+    padding: 62px 101px 86px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 104px 262px 69px 263px;
+    padding: 100px 377px 87px;
   }
 }
 
@@ -23,12 +26,17 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
   margin-top: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -43,7 +51,7 @@
 
 .photos__images {
   border-top: 1px solid $color-whisper-2;
-  padding: 24px 20px 25px;
+  padding: 24px 20px 23px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -59,7 +67,7 @@
 .photos__images img {
   min-height: 280px;
   min-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -90,7 +98,7 @@
 }
 
 .photo__list-item {
-  padding: 24px 20px 25px;
+  padding: 24px 20px 24px;
   border-top: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
@@ -105,7 +113,7 @@
 
 .photo__list-item img {
   min-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     border-style: none;
@@ -153,7 +161,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 14px 15px 21px;
+    padding: 19px 14px 15px 21px;
     background-color: $color-white-smoke;
   }
 
@@ -194,6 +202,8 @@
 }
 
 .photos__author {
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
   font-weight: 400;
   text-transform: none;

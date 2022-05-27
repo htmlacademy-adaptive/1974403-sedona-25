@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Городок Седона.</title>
+    <link rel="preload" href="/source/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/source/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="page__body">
@@ -13,7 +15,7 @@
         <img src="./img/logo.svg" height="96" alt="Логотип Седоны." />
       </a>
       <nav
-        class="main-navigation main-navigation--closed main-navigation--nojs"
+        class="main-navigation main-navigation--closed no-js"
       >
         <button
           class="main-navigation__toggle"
@@ -40,6 +42,8 @@
                 >Фото и Видео</a
               >
             </li>
+          </ul>
+          <ul class="main-navigation__list main-navigation__list-feedback">
             <li class="main-navigation__list-item">
               <a
                 class="main-navigation__link"
@@ -51,7 +55,7 @@
             <li class="main-navigation__list-item">
               <a
                 class="main-navigation__link"
-                href="#"
+                href="https://htmlacademy.ru/intensive/adaptive"
                 aria-label="Сайт Html Academy"
                 >Html Academy</a
               >
@@ -141,7 +145,6 @@
                 <p class="photos__author">Автор фото: Антон</p>
               </div>
               <button class="photos__like" type="button">254</button>
-            </div>
             </div>
           </li>
         </ul>
@@ -254,6 +257,7 @@
           </a>
         </div>
       </footer>
+      <script src="./js/style.js"></script>
     </main>
   </body>
 </html>

@@ -1,10 +1,10 @@
-.catalog {
+.main-form {
   display: flex;
   flex-direction: column;
   background-color: $color-default-white;
 }
 
-.catalog__welcome {
+.main-form__welcome {
   color: $color-default-white;
   background-color: $color-whisper;
   background-image: url("../img/intro/sedona-background.jpg");
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 288px;
+    height: 290px;
     margin: 0;
     background-image: url("../img/intro/sedona-background--tablet.jpg");
     background-size: cover;
