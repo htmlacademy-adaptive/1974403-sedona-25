@@ -1,25 +1,22 @@
 .presentation {
-  padding-top: 40px;
-
   @media (min-width: $tablet-width) {
-    padding: 58px 60px 66px 60px;
+    padding: 55px 60px 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 200px 66px 200px;
+    padding: 2px 200px 66px;
   }
 }
 
 .presentation__description {
-  padding: 17px 26px 38px 26px;
-  margin-bottom: 63px;
+  padding: 15px 26px 38px 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 100px 66px 100px;
+    padding: 0 100px 89px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 177px 64px 177px;
+    padding: 62px 177px 86px;
   }
 }
 
@@ -30,12 +27,12 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
   }
 }
 
@@ -52,6 +49,10 @@
   text-align: center;
   margin: auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .presentation__video-block img {
@@ -76,8 +77,13 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  left: 50%;
-  bottom: 50%;
+  left: 53%;
+  bottom: 35%;
   transform: translateX(-50%);
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    bottom: 45%;
+  }
 }

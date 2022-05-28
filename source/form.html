@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Городок Седона.</title>
+    <link rel="preload" href="/source/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/source/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="page__body">
@@ -13,7 +15,7 @@
         <img src="./img/logo.svg" height="96" alt="Логотип Седоны." />
       </a>
       <nav
-        class="main-navigation main-navigation--closed main-navigation--nojs"
+        class="main-navigation main-navigation--closed no-js"
       >
         <button
           class="main-navigation__toggle"
@@ -40,6 +42,8 @@
                 >Фото и Видео</a
               >
             </li>
+          </ul>
+          <ul class="main-navigation__list main-navigation__list-feedback">
             <li class="main-navigation__list-item">
               <a
                 class="main-navigation__link"
@@ -51,7 +55,7 @@
             <li class="main-navigation__list-item">
               <a
                 class="main-navigation__link"
-                href="#"
+                href="https://htmlacademy.ru/intensive/adaptive"
                 aria-label="Сайт Html Academy"
                 >Html Academy</a
               >
@@ -62,7 +66,7 @@
     </header>
     <main class="main-form">
       <h1 class="visually-hidden">Фотографии с местностью Сендоны</h1>
-      <div class="catalog__welcome welcome">
+      <div class="main-form__welcome welcome">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/intro/sedona--desktop.svg">
           <source media="(min-width: 768px)" srcset="img/intro/sedona--tablet.svg">
@@ -70,9 +74,9 @@
         </picture>
       </div>
       <section class="form">
-        <div class="photo-description">
-          <h2 class="photo-description__title">Оставьте свой отзыв</h2>
-          <p class="photo-description__text">
+        <div class="form-description">
+          <h2 class="form-description__title">Оставьте свой отзыв</h2>
+          <p class="form-description__text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях.
           </p>
@@ -84,7 +88,7 @@
             <ul class="user__list">
               <li class="user__item">
                 <label for="name">Имя*: </label>
-                <input class="user__input" type="text" id="name" name="user_name" placeholder="Петр" />
+                <input class="user__input" type="text" id="name" name="user_name" placeholder="Пётр" />
               </li>
               <li class="user__item">
                 <label for="last-name">Фамилия*:</label>
@@ -167,7 +171,7 @@
                   checked
                 />
                 <span class="visit-list__option"></span>
-                <span class="visit-list__name">Мост дьявола</span>
+                <span class="visit-list__name">Мост Дьявола</span>
                 </label>
               </li>
               <li class="visit-list__item">
@@ -179,7 +183,7 @@
                   checked
                 />
                 <span class="visit-list__option"></span>
-                <span class="visit-list__name">Гора-колокол</span>
+                <span class="visit-list__name">Гора-Колокол</span>
                 </label>
               </li>
               <li class="visit-list__item">
@@ -209,13 +213,13 @@
           </fieldset>
           </div>
           <fieldset class="message-form">
-            <legend class="message__description" for="msg">Опишите свои эмоции:</legend>
-            <textarea class="message__textarea" rows="7" id="msg" name="user_message" placeholder="Опишите подробно все свои восторги"></textarea>
+            <legend class="message__description">Опишите свои эмоции:</legend>
+            <textarea class="message__textarea" rows="7" name="user_message" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="message-form__wrapper">
               <button class="message-form__button" type="submit">
                 Отправить отзыв
               </button>
-              <small class="message-form__footnote">*-Обязательные поля</small>
+              <small class="message-form__footnote">* — Обязательные поля</small>
             </div>
           </fieldset>
         </form>
@@ -319,6 +323,8 @@
           <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
           <button class="modal-container__button button" type="button">Закрыть окно</button>
         </div>
+      </div>
     </main>
+    <script src="./js/style.js"></script>
   </body>
 </html>

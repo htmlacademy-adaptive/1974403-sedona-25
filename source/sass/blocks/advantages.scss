@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 359px 44px 357px;
+    padding: 58px 358px 29px 357px;
   }
 }
 
@@ -38,7 +38,7 @@
 
 .advantages__block-picture {
   min-width: 100%;
-  max-height: 260px;
+  max-height: 256px;
   object-fit: cover;
   flex-shrink: 0;
 
@@ -77,24 +77,23 @@
   }
 }
 
-
 .advantages__block {
-  padding: 45px 20px 45px 18px;
+  padding: 45px 20px 48px 18px;
   background-color: $color-seagull;
   color: $color-default-white;
   font-family: $font-family-main;
 
   &--devil-bridge {
-    padding: 39px 20px 36px 20px;
+    padding: 39px 20px 39px;
   }
 
   @media (min-width: $tablet-width) {
     width: 33.4%;
-    padding: 43px 31px 42px;
+    padding: 44px 31px 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px 95px 35px 91px;
+    padding: 52px 92px 35px;
   }
 }
 
@@ -110,6 +109,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 13px;
+    padding: 0 22px;
   }
 }
 
@@ -156,8 +156,12 @@
   position: relative;
 
   &--small-square {
-    padding: 22px 20px 22px;
+    padding: 23px 20px 24px;
     background-color: $color-whisper;
+
+    .advantages__item-title {
+      margin-bottom: 12px;
+    }
 
     &::after {
       content: "";
@@ -175,17 +179,21 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 42px 36px 63px 35px;
+      padding: 39px 36px 63px 35px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 43px 55px 61px;
+      padding: 42px 58px 61px;
     }
   }
 
   &--beautiful-road {
-    padding: 24px 41px 22px;
+    padding: 26px 41px 28px;
     background-color: $color-whisper;
+
+    .advantages__item-title {
+      margin-bottom: 12px;
+    }
 
     &::after {
       content: "";
@@ -203,7 +211,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 43px 54px 41px;
+      padding: 39px 54px 41px;
     }
 
     @media (min-width: $desktop-width) {
@@ -212,15 +220,19 @@
   }
 
   &--few-tourists {
-    padding: 24px 31px 22px;
+    padding: 23px 31px 22px;
     background-color: $color-whisper;
 
+    .advantages__item-title {
+      margin-bottom: 12px;
+    }
+
     @media (min-width: $tablet-width) {
-      padding: 42px 60px 42px 61px;
+      padding: 39px 60px 42px 61px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 44px 55px 60px;
+      padding: 42px 55px 60px;
     }
   }
 }
@@ -236,6 +248,10 @@
     text-align: center;
     font-size: 21px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 66px;
   }
 }
 
@@ -268,8 +284,12 @@
     left: 35%;
     top: 56px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    left: 40%;
+    top: 58px;
+  }
+}
 
 .advantages__list-eat::after {
   content: "";
@@ -288,6 +308,11 @@
     left: 35%;
     top: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 42%;
+    top: 61px;
+  }
 }
 
 .advantages__list-souvenirs::after {
@@ -304,8 +329,13 @@
   @media (min-width: $tablet-width) {
     width: 75px;
     height: 72px;
-    left: 40%;
-    top: 60px;
+    left: 38%;
+    top: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 43%;
+    top: 57px;
   }
 }
 
@@ -316,6 +346,10 @@
   @media (min-width: $tablet-width) {
     padding: 157px 35px 60px 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 46px 60px;
+  }
 }
 
 .advantages__list-eat {
@@ -323,7 +357,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    padding: 157px 35px 60px 35px;
+    padding: 156px 50px 60px;
   }
 }
 
@@ -332,6 +366,10 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    padding: 157px 35px 60px 35px;
+    padding: 156px 32px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 156px 88px 82px;
   }
 }
