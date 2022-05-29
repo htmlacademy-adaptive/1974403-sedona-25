@@ -40,9 +40,9 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/js//*.js",
+    "source/img//*.svg",
+    "source/sass//*.scss"
   ],
   "engines": {
     "node": "^16"
