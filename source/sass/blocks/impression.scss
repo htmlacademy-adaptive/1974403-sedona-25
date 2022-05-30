@@ -4,7 +4,7 @@
   line-height: 26px;
   border-style: none;
   border-bottom: 1px solid $color-whisper-2;
-  padding: 0 22px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -112,4 +112,9 @@
 
 .impression-list__input[type="radio"]:checked:active + .impression-list__option::before {
   opacity: 0.3;
+}
+
+.impression-list__input:focus + .impression-list__option {
+  background-color: $color-whisper-2;
+  outline: none;
 }

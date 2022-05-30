@@ -45,6 +45,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-navigation--opened .main-navigation__wrapper {
@@ -166,6 +173,10 @@
 .main-navigation.no-js .main-navigation__list,
 .main-navigation.is-open .main-navigation__list {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inherit;
+  }
 }
 
 .main-navigation.no-js .main-navigation__toggle {

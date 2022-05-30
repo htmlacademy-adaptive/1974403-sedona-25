@@ -113,3 +113,8 @@
 .visit-list__input[type="checkbox"]:checked:active + .visit-list__option::before {
   opacity: 0.3;
 }
+
+.visit-list__input:focus + .visit-list__option {
+  background-color: $color-whisper-2;
+  outline: none;
+}
