@@ -44,6 +44,18 @@
   }
 }
 
+.booking__header__break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .booking__header-button {
   display: inline-flex;
   background-color: $color-seagull;
